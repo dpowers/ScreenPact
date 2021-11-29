@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct ScreenPactApp: App {
+    @State private var authState = AuthState.unknown
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            switch(authState) {
+            case .unknown: RequestAuthorizationView(authState: $authState)
+            case .unauthorized(let reason): Text("Unauthorized: \(reason)")
+            case .authorized: ContentView()
+            }
         }
     }
 }

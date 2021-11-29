@@ -11,7 +11,36 @@
 		37F24090275516D3005511A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2408F275516D3005511A8 /* ContentView.swift */; };
 		37F24092275516D4005511A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F24091275516D4005511A8 /* Assets.xcassets */; };
 		37F24095275516D4005511A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F24094275516D4005511A8 /* Preview Assets.xcassets */; };
+		37F2409F27551774005511A8 /* RequestAuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2409E27551774005511A8 /* RequestAuthorizationView.swift */; };
+		37F240A127551822005511A8 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F240A027551822005511A8 /* Log.swift */; };
+		37F240AD27551EDD005511A8 /* ScreenPactMonitorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 37F240A627551EDD005511A8 /* ScreenPactMonitorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		37F240B427551EFF005511A8 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F240B327551EFF005511A8 /* Log.swift */; };
+		37F240B627552094005511A8 /* ScreenPactMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F240B527552094005511A8 /* ScreenPactMonitorExtension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37F240AB27551EDD005511A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37F24082275516D3005511A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F240A527551EDD005511A8;
+			remoteInfo = ScreenPactMonitorExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37F240B127551EDD005511A8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				37F240AD27551EDD005511A8 /* ScreenPactMonitorExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		37F2408A275516D3005511A8 /* ScreenPact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenPact.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +48,25 @@
 		37F2408F275516D3005511A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		37F24091275516D4005511A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37F24094275516D4005511A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37F2409B275516E0005511A8 /* ScreenPact.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenPact.entitlements; sourceTree = "<group>"; };
+		37F2409E27551774005511A8 /* RequestAuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAuthorizationView.swift; sourceTree = "<group>"; };
+		37F240A027551822005511A8 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		37F240A627551EDD005511A8 /* ScreenPactMonitorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenPactMonitorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F240AA27551EDD005511A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F240B227551EED005511A8 /* ScreenPactMonitorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenPactMonitorExtension.entitlements; sourceTree = "<group>"; };
+		37F240B327551EFF005511A8 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		37F240B527552094005511A8 /* ScreenPactMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenPactMonitorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		37F24087275516D3005511A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F240A327551EDD005511A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				37F2408C275516D3005511A8 /* ScreenPact */,
+				37F240A727551EDD005511A8 /* ScreenPactMonitorExtension */,
 				37F2408B275516D3005511A8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				37F2408A275516D3005511A8 /* ScreenPact.app */,
+				37F240A627551EDD005511A8 /* ScreenPactMonitorExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +97,11 @@
 		37F2408C275516D3005511A8 /* ScreenPact */ = {
 			isa = PBXGroup;
 			children = (
+				37F2409B275516E0005511A8 /* ScreenPact.entitlements */,
 				37F2408D275516D3005511A8 /* ScreenPactApp.swift */,
 				37F2408F275516D3005511A8 /* ContentView.swift */,
+				37F2409E27551774005511A8 /* RequestAuthorizationView.swift */,
+				37F240A027551822005511A8 /* Log.swift */,
 				37F24091275516D4005511A8 /* Assets.xcassets */,
 				37F24093275516D4005511A8 /* Preview Content */,
 			);
@@ -67,6 +116,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		37F240A727551EDD005511A8 /* ScreenPactMonitorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				37F240B227551EED005511A8 /* ScreenPactMonitorExtension.entitlements */,
+				37F240B327551EFF005511A8 /* Log.swift */,
+				37F240B527552094005511A8 /* ScreenPactMonitorExtension.swift */,
+				37F240AA27551EDD005511A8 /* Info.plist */,
+			);
+			path = ScreenPactMonitorExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +137,34 @@
 				37F24086275516D3005511A8 /* Sources */,
 				37F24087275516D3005511A8 /* Frameworks */,
 				37F24088275516D3005511A8 /* Resources */,
+				37F240B127551EDD005511A8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				37F240AC27551EDD005511A8 /* PBXTargetDependency */,
 			);
 			name = ScreenPact;
 			productName = ScreenPact;
 			productReference = 37F2408A275516D3005511A8 /* ScreenPact.app */;
 			productType = "com.apple.product-type.application";
+		};
+		37F240A527551EDD005511A8 /* ScreenPactMonitorExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F240AE27551EDD005511A8 /* Build configuration list for PBXNativeTarget "ScreenPactMonitorExtension" */;
+			buildPhases = (
+				37F240A227551EDD005511A8 /* Sources */,
+				37F240A327551EDD005511A8 /* Frameworks */,
+				37F240A427551EDD005511A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenPactMonitorExtension;
+			productName = ScreenPactMonitorExtension;
+			productReference = 37F240A627551EDD005511A8 /* ScreenPactMonitorExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +177,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					37F24089275516D3005511A8 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					37F240A527551EDD005511A8 = {
 						CreatedOnToolsVersion = 13.2;
 					};
 				};
@@ -116,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				37F24089275516D3005511A8 /* ScreenPact */,
+				37F240A527551EDD005511A8 /* ScreenPactMonitorExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +213,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37F240A427551EDD005511A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,10 +229,29 @@
 			files = (
 				37F24090275516D3005511A8 /* ContentView.swift in Sources */,
 				37F2408E275516D3005511A8 /* ScreenPactApp.swift in Sources */,
+				37F240A127551822005511A8 /* Log.swift in Sources */,
+				37F2409F27551774005511A8 /* RequestAuthorizationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F240A227551EDD005511A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F240B627552094005511A8 /* ScreenPactMonitorExtension.swift in Sources */,
+				37F240B427551EFF005511A8 /* Log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37F240AC27551EDD005511A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37F240A527551EDD005511A8 /* ScreenPactMonitorExtension */;
+			targetProxy = 37F240AB27551EDD005511A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		37F24096275516D4005511A8 /* Debug */ = {
@@ -264,8 +373,10 @@
 		37F24099275516D4005511A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenPact/ScreenPact.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreenPact/Preview Content\"";
@@ -293,8 +404,10 @@
 		37F2409A275516D4005511A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenPact/ScreenPact.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreenPact/Preview Content\"";
@@ -319,6 +432,60 @@
 			};
 			name = Release;
 		};
+		37F240AF27551EDD005511A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ScreenPactMonitorExtension/ScreenPactMonitorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HZPG29W5S5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenPactMonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenPactMonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.screenpact.ScreenPact.ScreenPactMonitorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37F240B027551EDD005511A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ScreenPactMonitorExtension/ScreenPactMonitorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HZPG29W5S5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenPactMonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenPactMonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.screenpact.ScreenPact.ScreenPactMonitorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +503,15 @@
 			buildConfigurations = (
 				37F24099275516D4005511A8 /* Debug */,
 				37F2409A275516D4005511A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37F240AE27551EDD005511A8 /* Build configuration list for PBXNativeTarget "ScreenPactMonitorExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F240AF27551EDD005511A8 /* Debug */,
+				37F240B027551EDD005511A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
